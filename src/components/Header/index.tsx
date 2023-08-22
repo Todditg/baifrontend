@@ -14,7 +14,9 @@ export const Header = (): React.ReactElement => {
         <GitLink href="https://github.com/Todditg/baifrontend">
           <img className="img" src="./assets/link_to_git.svg" alt="linktogit" />
         </GitLink>
-        <Title>Code Chronicles</Title>
+        <Title>
+          <img className="header1" src="../../assets/title.svg" alt="title"/>
+        </Title>
         <SideMenu>
           <img className="img" src="./assets/burgmenu.svg" alt="linktogit" />
         </SideMenu>
