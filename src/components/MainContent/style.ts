@@ -20,7 +20,7 @@ export const GridContainer = styled.div`
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   align-items: center;
-  padding-left: 10%;
+  
 
   .idea-item {
     background-color: #7effd4;
@@ -44,7 +44,8 @@ export const GridItemHeader = styled.div`
   color: #1d1d1d;
   font-size: 2vw;
   font-style: normal;
-  font-weight: 600;
+  font-family: 'Poppins';
+  font-weight: bold;
   line-height: normal;
   text-transform: uppercase;
   max-width: 230px;
@@ -54,7 +55,7 @@ export const GridItemHeader = styled.div`
 
 export const LastArticleDescription = styled.div`
   color: #1d1d1d;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -103,15 +104,15 @@ export const TextContent = styled.div`
   margin-top: 72px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: normal;  
   text-transform: capitalize;
 `;
 
 export const LastArticleTitle = styled.div`
-  color: #1d1d1d;
+  color: #1d1d1d; 
   font-size: 3.2vh;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   line-height: normal;
   margin-bottom: 25px;
   

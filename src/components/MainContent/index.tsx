@@ -28,6 +28,7 @@ export const MainContent = ({
           <TextContent>Актуальные статьи из мира программирования 
           Актуальные статьи из мира программирования
           Актуальные статьи из мира программирования
+          
           </TextContent>
         </GridItem>
         <GridItem className="last-article">
@@ -38,7 +39,7 @@ export const MainContent = ({
           <ArticleButton>ЧИТАТЬ ДАЛЕЕ</ArticleButton>
         </GridItem>
         <GridItem className="our-mission">sdfsdf</GridItem>
-        <GridItem className="popular-tags">sdfsdf</GridItem>
+        <GridItem className="popular-tags">sdfsdf </GridItem>
         <GridItem className="future-content-soon"> Future Content Future Content Future Content Future Content Future Content Future ContentFuture Content Future ContentFuture Content Future Content</GridItem>
       </GridContainer>
     </MainContentContainer>
