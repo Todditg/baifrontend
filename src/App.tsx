@@ -1,14 +1,14 @@
 import React from "react";
-import HelloWorld from "./components/HelloWorld";
-import RenderForm from "./components/RenderForm";
+import { ResetCSSGlobalStyle } from "./styles/reset";
+import { MainPage } from "./components/MainPage";
 
-const App = () => {
-    return (
-        <div>
-            <HelloWorld />
-            <RenderForm />
-        </div>
-    );
+const App = (): React.ReactElement => {
+  return (
+    <div>
+      <ResetCSSGlobalStyle />
+      <MainPage />
+    </div>
+  );
 };
 
 export default App;
