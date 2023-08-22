@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf'
 import PoppinsItalic from '../assets/fonts/Poppins/Poppins-Italic.ttf'
+import PoppinsBold from '../assets/fonts/Poppins/Poppins-Bold.ttf'
 
 export const ResetCSSGlobalStyle = createGlobalStyle`
 /* Задаем box-sizing: border-box, чтобы отступы не влияли на размеры элементов */
@@ -25,11 +26,20 @@ export const ResetCSSGlobalStyle = createGlobalStyle`
   src: url(${PoppinsItalic});
   }
 
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-style: bold;
+  font-display: swap;
+  src: url(${PoppinsBold});
+  }
+
 html,
 body {
   width: 100%;
   height: 100%;
   background-color: #373737;
+  font-size: 16px;
 }
 
 body {

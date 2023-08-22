@@ -28,8 +28,10 @@ export const SideMenu = styled.button`
   content: url(/src/assets/burgmenu.svg);
   background-color: #373737;
   border: none;
+  cursor: pointer;
 `;
 
 export const Title = styled.div`
   padding-top: 10px;
+  cursor: pointer;
 `
