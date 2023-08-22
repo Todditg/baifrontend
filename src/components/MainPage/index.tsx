@@ -7,6 +7,7 @@ export const MainPage = (): React.ReactElement => {
   return (
     <MainContainer>
       <Header />
+      <MainContent />
     </MainContainer>
   );
 };
