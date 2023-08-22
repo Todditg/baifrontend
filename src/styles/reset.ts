@@ -1,11 +1,29 @@
 import { createGlobalStyle } from "styled-components";
 
+import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf'
+import PoppinsItalic from '../assets/fonts/Poppins/Poppins-Italic.ttf'
+
 export const ResetCSSGlobalStyle = createGlobalStyle`
 /* Задаем box-sizing: border-box, чтобы отступы не влияли на размеры элементов */
 *, *::before, *::after {
 	box-sizing: border-box;
-    --font-variable: "Poppins";
 }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url(${PoppinsRegular});
+  }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  src: url(${PoppinsItalic});
+  }
 
 html,
 body {
@@ -38,6 +56,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: Poppins;
 }
 
 `;
