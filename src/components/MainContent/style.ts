@@ -15,15 +15,17 @@ export const GridContainer = styled.div`
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(28vw, 28vh));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
-  align-items: center;
+  justify-items: center;
+  grid-auto-flow: row;
   
 
   .idea-item {
     background-color: #7effd4;
+    
   }
   .future-content-soon {
     display: flex;
@@ -35,16 +37,32 @@ export const GridContainer = styled.div`
     align-items: center;
     font-size: 4vh;
   }
-  .last-article {
+  .last-article, .popular-tags {
     background-color: #fff;
   }
+
+  .our-mission {
+    border: 2px solid #7EFFD4;
+  }
+
+  .idea-item-text {
+    padding-top: 72px;;
+  }
+
+  .our-mission > div {
+    color: #fff;
+  }
+
+  .read-button {
+    grid-column: span 3;
+  }
+
 `;
 
 export const GridItemHeader = styled.div`
   color: #1d1d1d;
   font-size: 2vw;
   font-style: normal;
-  font-family: 'Poppins';
   font-weight: bold;
   line-height: normal;
   text-transform: uppercase;
@@ -99,9 +117,8 @@ export const ArticleButton = styled.button`
 
 export const TextContent = styled.div`
   color: #1d1d1d;
-  font-size: 3.2vh;
+  font-size: 18px;
   max-width: 347px;
-  margin-top: 72px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;  
@@ -123,5 +140,23 @@ export const GridItem = styled.div`
   justify-content: center;
   max-width: 420px;
   border-radius: 24px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+`;
+
+export const ReadButton = styled(ArticleButton)`
+  background-color: transparent;
+  border: 1px solid #7EFFD4;
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  height: 50px;
+  margin-bottom: 56px;
+  border-radius: 26px;
+  &:hover {
+    background-color: #7EFFD4;
+    
+  }
 `;
