@@ -14,7 +14,7 @@ import {
   StyledLink,
 } from "./style";
 import { IItemsProps } from "../../Pages/MainPage/types";
-import {Link} from "react-router-dom"
+
 
 export const MainContent = ({
   lastArticleText = "Волновой алгоритм",
