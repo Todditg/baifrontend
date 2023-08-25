@@ -7,6 +7,7 @@ export const HeaderStyled = styled.div`
   justify-content: center;
   box-sizing: border-box;
   border-bottom: 1.5px solid #7effd4;
+  background-color: #373737;
 `;
 
 export const HeaderCompsContainer = styled.div`

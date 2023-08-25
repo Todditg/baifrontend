@@ -7,7 +7,6 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
-    redirect,
 } from "react-router-dom";
 
 ReactDOM.render(
