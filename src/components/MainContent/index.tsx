@@ -10,9 +10,11 @@ import {
   LastArticleTitle,
   LastArticleDescription,
   LastArticleTags,
-  ReadButton
+  ReadButton,
+  StyledLink,
 } from "./style";
-import { IItemsProps } from "../MainPage/types";
+import { IItemsProps } from "../../Pages/MainPage/types";
+import {Link} from "react-router-dom"
 
 export const MainContent = ({
   lastArticleText = "Волновой алгоритм",
@@ -52,7 +54,9 @@ export const MainContent = ({
         </GridItem>
         <GridItem className="future-content-soon"> Future Content Future Content Future Content Future Content Future Content Future ContentFuture Content Future ContentFuture Content Future Content</GridItem>
         <GridItem className="read-button">
-          <ReadButton>К СТАТЬЯМ</ReadButton>
+          <StyledLink to="/article_list">
+            <ReadButton>К СТАТЬЯМ</ReadButton>
+          </StyledLink>
         </GridItem>
       </GridContainer>
       

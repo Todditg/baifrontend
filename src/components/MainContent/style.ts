@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import * as colorette from "colorette";
+import { Link } from "react-router-dom";
 
 export const MainContentContainer = styled.div`
   display: flex;
@@ -160,3 +161,9 @@ export const ReadButton = styled(ArticleButton)`
     
   }
 `;
+
+export const StyledLink = styled(Link)`
+   color: #fff;
+   text-decoration: none;
+`
+

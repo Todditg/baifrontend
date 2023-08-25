@@ -1,6 +1,6 @@
 import React from "react";
 import { ResetCSSGlobalStyle } from "./styles/reset";
-import { MainPage } from "./components/MainPage";
+import { MainPage } from "./Pages/MainPage";
 
 const App = (): React.ReactElement => {
   return (
