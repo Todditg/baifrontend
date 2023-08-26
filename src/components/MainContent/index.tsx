@@ -14,6 +14,7 @@ import {
   StyledLink,
 } from "./style";
 import { IItemsProps } from "../../Pages/MainPage/types";
+import { Link } from "react-router-dom";
 
 
 export const MainContent = ({
@@ -38,7 +39,7 @@ export const MainContent = ({
           <LastArticleTitle>{lastArticleText}</LastArticleTitle>
           <LastArticleDescription>{lastArtDescription}</LastArticleDescription>
           <LastArticleTags>{lastArticleTags.join(' / ')}</LastArticleTags>
-          <ArticleButton>ЧИТАТЬ ДАЛЕЕ</ArticleButton>
+          <Link to="article_id"><ArticleButton>ЧИТАТЬ ДАЛЕЕ</ArticleButton></Link>
         </GridItem>
         <GridItem className="our-mission">
           <GridItemHeader>Наша миссия</GridItemHeader>

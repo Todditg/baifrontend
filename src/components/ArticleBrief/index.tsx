@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArticleBriefBlockStyled, ArticleBriefButton, ArticleDescription, ArticleTags, ArticleTitle, TitleAndTagsContainer } from './styled';
 import { IItemsProps } from "../../Pages/MainPage/types";
-
+import { Link } from 'react-router-dom';
 
 export const ArticleBriefBlock = ({
     lastArticleText = "Волновой алгоритм",
@@ -16,7 +16,7 @@ export const ArticleBriefBlock = ({
                 <ArticleTags>{lastArticleTags.join(' / ')}</ArticleTags>
             </TitleAndTagsContainer>
             <ArticleDescription>{lastArtDescription}</ArticleDescription>
-            <ArticleBriefButton></ArticleBriefButton>
+            <Link to="/article_id"><ArticleBriefButton></ArticleBriefButton></Link>
         </ArticleBriefBlockStyled>
         
     );
