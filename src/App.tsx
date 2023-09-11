@@ -3,6 +3,7 @@ import { ResetCSSGlobalStyle } from "./styles/reset";
 import { MainPage } from "./Pages/MainPage";    
 import { ArticleList } from "./Pages/ArticleList";
 import { ArticleDetails } from "./Pages/ArticleDetails";
+import { ComingSoon } from "./Pages/ComingSoon";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,7 +16,7 @@ const App = (): React.ReactElement => {
       <ResetCSSGlobalStyle />
       <Router>
             <Routes>
-                <Route path="/" Component={MainPage}/>
+                <Route path="/" Component={ComingSoon}/>
                 <Route path="/article_list" Component={ArticleList}/>
                 <Route path="/article_id" Component={ArticleDetails}/>
             </Routes>
