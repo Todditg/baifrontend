@@ -8,6 +8,11 @@ module.exports = {
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
     devServer: {static: {directory: path.join(__dirname, "src") }},
     module: {
         rules: [
