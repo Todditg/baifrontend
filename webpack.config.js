@@ -13,7 +13,21 @@ module.exports = {
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
     },
-    devServer: {static: {directory: path.join(__dirname, "src") }},
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "src") 
+        },
+        server: {
+            type: 'https',
+            options: {
+                cert: '/SSL/codechronicles.srt',  
+                // ca: '/SSL/chain.srt',
+                key: '/SSL/private.key',
+                // requestCert: true,
+            },
+          },
+
+    },
     module: {
         rules: [
             {
