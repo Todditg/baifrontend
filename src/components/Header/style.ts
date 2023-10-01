@@ -1,8 +1,7 @@
-import { styled } from "styled-components";
+import { styled } from "styled-components"; 
 
 export const HeaderStyled = styled.div`
   display: flex;
-  background-color: #373737;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -29,6 +28,11 @@ export const SideMenu = styled.button`
   content: url(/src/assets/burgmenu.svg);
   background-color: #373737;
   border: none;
+  cursor: pointer;
+    
 `;
 
-export const Title = styled.div``;
+export const Title = styled.div`
+  padding-top: 10px;
+  cursor: pointer;
+`

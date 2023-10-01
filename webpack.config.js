@@ -8,7 +8,26 @@ module.exports = {
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },
-    devServer: {static: {directory: path.join(__dirname, "src") }},
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "src") 
+        },
+        server: {
+            type: 'https',
+            options: {
+                cert: '/SSL/codechronicles.srt',  
+                // ca: '/SSL/chain.srt',
+                key: '/SSL/private.key',
+                // requestCert: true,
+            },
+          },
+
+    },
     module: {
         rules: [
             {

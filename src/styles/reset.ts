@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
-import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf'
-import PoppinsItalic from '../assets/fonts/Poppins/Poppins-Italic.ttf'
+import MontserratRegular from '../assets/fonts/Montserrat/Montserrat-Regular.woff'
+import MontserratBold from '../assets/fonts/Montserrat/Montserrat-Bold.woff'
 
 export const ResetCSSGlobalStyle = createGlobalStyle`
 /* Задаем box-sizing: border-box, чтобы отступы не влияли на размеры элементов */
@@ -10,25 +10,27 @@ export const ResetCSSGlobalStyle = createGlobalStyle`
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Montserrat';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url(${PoppinsRegular});
+  src: url(${MontserratRegular}) format('woff');
   }
 
 @font-face {
-  font-family: 'Poppins';
-  font-weight: normal;
-  font-style: italic;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-style: normal;
   font-display: swap;
-  src: url(${PoppinsItalic});
+  src: url(${MontserratBold}) format('woff');
   }
 
 html,
 body {
   width: 100%;
   height: 100%;
+  background-color: #373737;
+  font-size: 16px;
 }
 
 body {
@@ -56,7 +58,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: Poppins;
+  font-family: "Montserrat", sans-serif;
 }
 
 `;
